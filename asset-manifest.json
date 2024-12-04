@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/KTM_LNT/static/css/main.52b3b8e7.css",
+    "main.js": "/KTM_LNT/static/js/main.ad20b63b.js",
+    "index.html": "/KTM_LNT/index.html",
+    "main.52b3b8e7.css.map": "/KTM_LNT/static/css/main.52b3b8e7.css.map",
+    "main.ad20b63b.js.map": "/KTM_LNT/static/js/main.ad20b63b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52b3b8e7.css",
+    "static/js/main.ad20b63b.js"
+  ]
+}
