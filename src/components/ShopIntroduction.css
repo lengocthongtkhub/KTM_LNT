@@ -1,0 +1,131 @@
+/* src/components/ShopIntroduction.css */
+
+/* Main container */
+.shop-introduction {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Heading Styling */
+.shop-introduction h2 {
+  color: #2c3e50;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+.shop-introduction p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-weight: 300;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+}
+
+/* Call-to-action button styling */
+.shop-introduction .cta-button {
+  margin-top: 40px;
+}
+
+.shop-introduction .cta-link {
+  background-color: #253786;
+  color: white;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.shop-introduction .cta-link:hover {
+  background-color: #3498db;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container */
+.shop-image-container {
+  position: relative;
+  width: 80%; /* Adjust width to make image smaller */
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image styling */
+.shop-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 12px;
+}
+
+.shop-image:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+/* Overlay for the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.shop-image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-introduction {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .shop-introduction h2 {
+    font-size: 32px;
+  }
+
+  .shop-introduction p {
+    font-size: 16px;
+  }
+
+  .shop-introduction .cta-link {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+
+  /* Make the image even smaller on mobile */
+  .shop-image-container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+/* about.css */
+
+/* Chứa toàn bộ phần giới thiệu */
+.about-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Màu nền trắng */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho phần giới thiệu */
+}
+
+/* Tiêu đề phần giới thiệu */
+.about-container h1 {
+  color: #ff5722; /* Màu đỏ Tết */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Viết hoa tiêu đề */
+}
+
+/* Nội dung phần giới thiệu */
+.about-container p {
+  font-size: 16px;
+  color: #757575; /* Màu chữ xám cho dễ đọc */
+  line-height: 1.8; /* Khoảng cách dòng để nội dung dễ đọc hơn */
+  margin-bottom: 20px;
+  text-align: justify; /* Canh đều hai bên cho đoạn văn */
+}
+
+/* Nút quay lại trang chủ */
+.about-container .back-to-home-btn {
+  background-color: #ff5722; /* Màu đỏ Tết cho nút */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Viết hoa chữ trên nút */
+}
+
+.about-container .back-to-home-btn:hover {
+  background-color: #d32f2f; /* Đổi màu khi hover */
+}

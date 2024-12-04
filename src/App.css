@@ -1,0 +1,184 @@
+/* styles.css */
+
+/* Thêm nền Tết cho toàn bộ trang */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: flex-start; /* Căn giữa theo chiều dọc, cách trên cùng */
+  min-height: 100vh; /* Chiều cao toàn bộ trang */
+  background: url("https://phunugioi.com/wp-content/uploads/2021/12/background-Tet-1.jpg")
+    no-repeat center center fixed;
+  background-size: cover; /* Lấp đầy toàn bộ màn hình */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Tiêu đề Trang Chủ */
+h1 {
+  font-size: 30px;
+  color: #ff5722; /* Màu đỏ Tết */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Căn giữa các sản phẩm theo chiều ngang */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  margin-top: 20px;
+}
+
+/* Mỗi sản phẩm */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 220px; /* Thu nhỏ kích thước của sản phẩm */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #ff5722; /* Thêm đường viền màu đỏ Tết */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi di chuột vào */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng */
+  border-color: #d32f2f; /* Thay đổi màu viền khi hover */
+}
+
+/* Ảnh sản phẩm */
+.product-card img {
+  width: 100%;
+  height: 160px; /* Giảm kích thước hình ảnh */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tên sản phẩm */
+.product-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ff5722;
+}
+
+/* Giá sản phẩm */
+.product-card p {
+  font-size: 16px;
+  color: #757575;
+  margin: 8px 0;
+}
+
+/* Nút thêm vào giỏ hàng */
+.add-to-cart-btn {
+  background-color: #ff5722; /* Màu đỏ Tết */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #d32f2f; /* Màu tối hơn khi di chuột */
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Thanh điều hướng (Navigation) */
+nav {
+  background-color: #ff5722; /* Màu đỏ Tết cho thanh điều hướng */
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  text-transform: uppercase; /* Viết hoa các liên kết */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Trang Giỏ Hàng và Thanh Toán */
+.cart-container,
+.checkout-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Các nút thanh toán và giỏ hàng */
+.checkout-btn,
+.payment-btn {
+  background-color: #e63e0b; /* Màu đỏ Tết */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover,
+.payment-btn:hover {
+  background-color: #d32f2f; /* Màu tối hơn khi di chuột */
+}
+
+/* Trang Giới thiệu */
+.about-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  color: #ff5722;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 16px;
+  color: #757575;
+  line-height: 1.5;
+}
+
+/* Phần Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff5722;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
